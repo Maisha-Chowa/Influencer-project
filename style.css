@@ -1,0 +1,221 @@
+/* Font Style */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* Common Style */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+}
+
+/* Banner-Part-Start */
+.Banner{
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 700px;
+}
+.name{
+    text-align: center;
+    padding: auto;
+    font-size: 20px;
+    color:rgb(43, 61, 226);
+}
+#heading{
+    transition: transform 500ms ease-in-out 25ms;
+}
+#heading:hover{
+    transform: translateX(0px) translateY(-75px);
+}
+#seemore{
+    background-image: linear-gradient(blue,aqua);
+    color: beige;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    float: right;
+    margin-right: 30px;
+}
+
+.Bannerleft{
+    padding: 10% 5%;
+    color:rgb(43, 61, 226);
+    font-size:30px;
+    
+
+}
+.Bannerleft p{
+    color: black;
+    font-size: medium;
+}
+a{
+
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
+#arrow{
+    color: white;
+    margin-top: 10px;
+    margin-left: 3px;
+}
+.button {
+    display: flex;
+    width: 250px;
+    background-image: linear-gradient(blue,aqua);
+    font-weight: 400;
+    padding: 10px 10px;
+    border-radius: 50px;
+    margin-left: 15px;
+    
+}
+.Bannerright{
+    
+    background-image: url("images/images1/Circle\ design.svg");
+    background-repeat: no-repeat;
+   
+}
+/* Banner-Part-End */
+
+/* All-Players-Section-Start */
+.Productlist{
+      display: grid;
+      margin: 7% 5% 7% 5%;
+      grid-template-columns: repeat(3,1fr);
+      grid-column-gap: 5px;
+      justify-content: center;
+      align-content: center;
+   
+}  
+.Product{
+   
+    max-width: 400px;
+    margin: 10% 10%;
+    padding: 1% 1%;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px gray;
+      
+}  
+  .Product.Productimage img{
+    max-width: 350px;
+    margin-right: auto; 
+    display: block;
+    /* width: 350px;
+    height: 256px;   */
+    
+}
+.Productinfo{
+
+    width: 300px;
+    height: 230px;
+    padding-bottom: 50px;
+    
+} 
+/* All-Players-Section-Start */
+/* Extra-Part-Start  */
+.Extra{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+/* form-Create */
+h2{
+    margin-left: 15px;
+    color: rgb(43, 92, 226);
+}
+.input{
+    display: flex;
+    width: 50%;
+    margin-bottom: 15px;
+    margin-left: 15px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+  }
+  
+  .input-field:focus {
+    border: 2px solid dodgerblue;
+  }
+  #button-form{
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(blue,aqua);
+    font-weight: 400;
+    padding: 10px 10px;
+    border-radius: 50px;
+    margin-left: 15px;
+
+  }
+  /* Extra-Part-End  */
+  /* Footer-Part-Start  */
+  .footer{
+    width: 100%;
+     display: grid;
+     grid-template-columns: repeat(1,1fr);
+     
+     color: white;
+     text-align: center;
+     background-color: rgb(77, 43, 176);
+}
+.Social-Icons{
+    
+    font-size: 30px;
+
+}
+.Copyright{
+    font-size: 100%;
+}
+/* Footer-Part-End  */
+/* Media-Queries
+Tablet */
+@media (max-width:992px){
+    .Productlist{
+        
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 0px;
+    }
+    .Extra{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/* Mobile-Device */
+@media  (max-width:688px){ 
+    .Banner{
+        border: none;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .Bannerleft{
+        height: 138px;
+        align-content: left;
+        color: blueviolet;
+        font-size:15px;
+        
+    
+    }
+    .button {
+        text-decoration: none;
+        color: white;
+        background-image: linear-gradient(blue,aqua);
+        font-weight: 50;
+        padding: 5px 5px;
+        border-radius: 5px;
+    }
+    .Productlist{
+        display: grid;
+        margin: 1% 1% 1% 1%;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .Extra{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+    
+
